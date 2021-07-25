@@ -2,7 +2,7 @@ rankhospital <- function(state, outcome, num = "best") {
   #data collection and selection
   outpd<-read.csv("outcome-of-care-measures.csv")##file location--editable
   target_columns=names(outpd)[c(2,11,17,23)]
-  source("~/R/source/na-cleaner.R")
+  source("../na-cleaner.R")
   
   if(!is.element(state,outpd$State)){
     return('invalid state')
