@@ -1,7 +1,7 @@
 best <- function(state, outcome) {
   #data collection and selection
   outpd<-read.csv("outcome-of-care-measures.csv")##file location--editable
-  source("~/R/source/na-cleaner.R")
+  source("../na-cleaner.R")
   target_columns=names(outpd)[c(2,7,11,17,23)]
   target_data=subset(outpd,select = target_columns)
   #target_data=cleana(target_data)
