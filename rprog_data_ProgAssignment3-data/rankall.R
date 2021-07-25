@@ -2,7 +2,7 @@ rankall <- function(outcome, num = "best") {
   #data collection and selection
   outpd<-read.csv("outcome-of-care-measures.csv")##file location--editable
   #target_columns=names(outpd)[c(2,)]
-  source("~/R/source/na-cleaner.R")
+  source("../na-cleaner.R")
   
   #
   if(outcome=='heart attack'){
